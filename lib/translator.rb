@@ -9,7 +9,7 @@ def load_library(path)
       japanese = emot[1]
       english = emot[0]
       hash['get_meaning'][japanese] = meaning
-      hash['get_emoticon'][english] = jap
+      hash['get_emoticon'][english] = japanese
     end
   hash
 end
