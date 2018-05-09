@@ -6,10 +6,10 @@ def load_library(path)
   emojis = YAML.load_file(path)
   hash = {"get_meaning" => {}, "get_emoticon" => {} }
     emojis.each do |meaning, emot|
-      jap = emot[1]
-      eng = emot[0]
-      hash['get_meaning'][jap] = meaning
-      hash['get_emoticon'][eng] = jap
+      japanese = emot[1]
+      english = emot[0]
+      hash['get_meaning'][japanese] = meaning
+      hash['get_emoticon'][english] = jap
     end
   hash
   binding.pry
