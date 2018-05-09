@@ -12,7 +12,6 @@ def load_library(path)
       hash['get_emoticon'][english] = jap
     end
   hash
-  binding.pry
 end
 
 def get_japanese_emoticon(path, emoticon)
